@@ -1,0 +1,214 @@
+/*---------------------------------------------------CONSULTORIO*/
+.sec_consultorio{
+    text-align: center;
+}
+
+.como_llegar, .Horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.como_llegar span, .Horario span{
+    padding: 0px;
+}
+.sec_consultorio img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    transition: all 0.3s ease-out;
+}
+.sec_consultorio img:hover{
+    transform: scale(1.1);
+}
+/*---------------------------------------------------conecta*/
+.contacta h2, p{
+    padding: 10px 15px 5px 15px;
+}
+
+.contacta hr{
+    width: 90%;
+    border: 1px solid #b48fff;
+}
+.contacta ul{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px;
+    list-style: none;
+}
+
+.contacta li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fe5ff;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: white; 
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.contacta li a:hover{
+    background-color: #9e6dff;
+    transform:translateY(-10px);
+    transition: all 0.3s;
+}
+/*------------------------*/
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form input{
+    margin-top: 15px;
+    border: 1px solid #61616156;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+.form  textarea{
+    width: 250px;
+    margin-top: 15px;
+    border: 1px solid #30303056;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.form .input_button{
+    background-color: #3f89b4;
+    color: white;
+    width: 150px;
+    transition: all 0.3s;
+}
+.form .input_button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    background-color: #fde5b2;
+    box-shadow: 0px 0px 10px 0 #c51f1f5d;
+}
+
+/*---------------------------------------------------BOTON ARRIBA*/
+#arriba{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #d4bfff;
+	background-color:  #9c57b1;
+	position: fixed;
+	left: 85%;
+	bottom: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	transform: scale(0);
+}
+#arriba:hover{
+	opacity: .70;
+	transform: scale(1.1);
+}
+.bi-chevron-double-up{
+	font-size: 15px;
+}
+/*---------------------------------------------------@MEDIA*/
+@media(min-width: 480px){
+	.contacta{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conecta_text{
+        
+        width: 400px;
+    }
+}
+@media(min-width:600px){
+    
+}
+@media(min-width: 768px){
+
+	.contacta{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .conecta_text{
+        margin-left: 80px;
+    }
+    .conecta_text p{
+        font-size: 22px;
+    }
+	#arriba{
+		margin-left: 7%;
+	}
+}
+@media(min-width: 1024px){
+    .sec_consultorio{
+        padding: 35px;
+    }
+    .caja_consult{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .caja_consult_text{
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+    }
+    .caja_consult iframe{
+        width: 600px;
+        height: 400px;
+    }
+    .conecta_text{
+        width: 500px;
+    }
+    .form input{
+        width: 320px;
+        height: 60px;
+    }
+    .form  textarea{
+        width: 320px;
+        height: 120px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .footer hr{
+        display: none;
+    }
+    .footer_logo p{
+        width: 250px;
+    }
+    .caja_footer_img{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_img button{
+        margin-top: 15px;
+    }
+
+}
+@media(min-width: 1200px){
+    .form input{
+        width: 320px;
+        height: 60px;
+    }
+    .form  textarea{
+        width: 320px;
+        height: 120px;
+    }
+}
