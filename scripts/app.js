@@ -1,34 +1,24 @@
-/*function timbre() {
-    let nombre= prompt("Ingrese su nombre:");
+let altura= prompt("Ingrese su altura:");
+let peso= prompt("Ingrese su peso: ");
 
-    switch (nombre) {
-        case "Gonza":
-            console.log("Hola Gonza!!")
+
+function calculo(peso,altura) {
+    let resultado= peso/(altura*altura);
+
+    switch (resultado) {
+        case (resultado < 18.5):
+            alert("Su peso es INSUFIENTE");
             break;
-        case "Andres":
-            console.log("Hola Andres!!")
+        case (resultado >= 18.5 && resultado < 24.9):
+            alert("Su peso es NORMAL");
             break;
-        case "Milton":
-            console.log("Hola Milton!!")
+        case (resultado >= 25.0 && resultado < 29.9):
+            alert("Se encuentra en SOBREPESO");
             break;
         default:
-            console.log("No sos mi amigo")
+            alert("OBESIDAD");
             break;
+    }
 }
-}*/
-    
-/*let mascotas = ["gato","perro","caballo","ardilla"];
-
-console.log(mascotas[0].length);
-console.log(mascotas[1].length);
-console.log(mascotas[2].length);
-console.log(mascotas[3].length);*/
 
 
-
-/*let i=0;
-
-while (i<5) {
-    console.log("Valor de i" , i);
-    i=i +1;
-}*/
